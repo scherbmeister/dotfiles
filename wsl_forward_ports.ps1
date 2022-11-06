@@ -1,4 +1,4 @@
-$ports = @(2222, 80, 443, 8080)
+$ports = @(22,2222, 80, 443, 8080)
 
 foreach ($port in $ports) {
     netsh interface portproxy delete v4tov4 listenaddress=0.0.0.0 listenport=$port
